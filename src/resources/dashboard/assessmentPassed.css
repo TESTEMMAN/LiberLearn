@@ -30,10 +30,60 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   overflow-y: scroll;
 }
+
+.assPassedRightSection h2 {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(16, 40, 68, 1);
+  margin: 0;
+}
+
+.assPassedRightSection h1 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(16, 40, 68, 1);
+  margin: 0;
+}
+
+.passMark h1 {
+  font-family: Poppins;
+  font-size: 82px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: center;
+  color: rgba(33, 150, 83, 1);
+  margin: 50px 0 30px 0;
+}
+
+.assPassedRightSection p {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(16, 40, 68, 1);
+}
+
+.btnHome {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
 
 
 

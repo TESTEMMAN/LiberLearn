@@ -3,7 +3,7 @@ import "./divFive.css";
 function DivFive() {
   return (
     <div className="landingFive">
-      <h1>Contact us</h1>
+      <h1 id="contact-us">Contact us</h1>
       <form className="contactForm">
         <input
           className="half1"

@@ -9,15 +9,23 @@ function Header (props) {
     <header>
       <div className="headerContent">
         <div className="logo">
-          <img src={props} alt="Logo" />
+          <img src={logo} alt="Logo" />
           <h1>Landing Page</h1>
         </div>
         <nav>
           <ul>
-            <li className={props.homeActive}>Home</li>
-            <li className={props.aboutActive}>About us</li>
-            <li className={props.coursesActive}>Courses</li>
-            <li className={props.contactActive}>Contact</li>
+            <li className={props.homeActive}>
+              <a href="/">Home</a>
+            </li>
+            <li className={props.aboutActive}>
+              <a href="/about-us">About us</a>
+            </li>
+            <li className={props.coursesActive}>
+              <a href="/courses">Courses</a>
+            </li>
+            <li className={props.contactActive}>
+              <a href="/#contact-us">Contact</a>
+            </li>
           </ul>
         </nav>
         <Button url="login" buttonText="Login" />

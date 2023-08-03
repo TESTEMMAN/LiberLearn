@@ -23,16 +23,17 @@ function AssessmentPage() {
               <h2>Discover</h2>
               <p>Courses Computer Programming Assessment</p>
             </div>
-            <Button url="/assessment-passed" buttonText="Submit" />
+            <Button url="/trial-link" buttonText="Submit" />
           </div>
           <div className="assPageLower">
-            <h1>WELCOME</h1>
+            <h1>WELCOME!</h1>
+            <h2> Instruction</h2>
             <p>This assessment is timed for 10 minutes</p>
             <p>Choose the correct option</p>
             <form>
-              <span>
-                <span>Question 1/100</span> Which HTML element is used to define
-                the structure of a web page?
+            
+                <span className="Ash">Question 1/100</span> <br/><span className="Ash2">Which HTML element is used
+                to define the structure of a web page?
               </span>
               <label className="inputType">
                 <span>&lt;body&gt;</span>{" "}
@@ -51,9 +52,8 @@ function AssessmentPage() {
             </form>
 
             <form>
-              <span>
-                <span>Question 2/100</span> WWhat is the correct way to create a
-                hyperlink in HTML?
+                <span className="Ash">Question 2/100</span> <br/> <span className="Ash2">What is the correct way
+                to create a hyperlink in HTML?
               </span>
               <label className="inputType">
                 <span>&lt;link&gt;</span>{" "}

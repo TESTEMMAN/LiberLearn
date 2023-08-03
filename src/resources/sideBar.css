@@ -7,14 +7,22 @@ section {
   flex-direction: column;
 }
 
-
-
 .sideBarA {
   height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+}
+
+.sideBarA p a {
+  text-decoration: none;
+  color: white;
+}
+
+.sideBarB p a {
+  text-decoration: none;
+  color: white;
 }
 
 .sideBarAImage {

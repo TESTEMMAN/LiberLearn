@@ -3,6 +3,7 @@ import cancelIcon from "../Image/image2/cancel icon.png";
 import SideBar from "../sideBar";
 import TopBar from "../topBar";
 import userImage from "../Image/image2/userImage.png";
+import Button from "../Navigation/button";
 
 
 function AssessmentFail() {
@@ -14,7 +15,7 @@ function AssessmentFail() {
 
       <div className="assFailRightBody">
         <div className="rightBodyTop">
-            <TopBar avatar={ userImage } />
+          <TopBar avatar={userImage} />
         </div>
 
         <section className="assFailRightSection">
@@ -30,7 +31,10 @@ function AssessmentFail() {
             <h1>25%</h1>
             <img src={cancelIcon} alt="assessment failed" />
           </div>
-          <a href="/assessment-fail">Retake</a>
+          <div className="btnRetake">
+            <Button url="/" bgColor='rgba(39, 174, 96, 1)'
+ buttonText="Retake" />
+          </div>
         </section>
       </div>
     </div>

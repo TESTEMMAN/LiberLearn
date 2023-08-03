@@ -75,7 +75,7 @@ export default CoursesPage;
 function CoursesDiv(props) {
   return (
     <div className="indCourse" style={{ backgroundColor: props.color }}>
-      <div className="courseImage">
+      <div className="coursesImage">
         <img src={props.courseImage} alt={props.courseName} />
       </div>
       <div className="courseName">

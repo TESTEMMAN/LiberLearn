@@ -3,6 +3,7 @@ import passImage from '../Image/image2/e commerce completed order.png';
 import userImage from "../Image/image2/userImage.png";
 import SideBar from "../sideBar";
 import TopBar from "../topBar";
+import Button from "../Navigation/button";
 
 function AssessmentPassed() {
   return (
@@ -13,7 +14,7 @@ function AssessmentPassed() {
 
       <div className="assPassedRightBody">
         <div className="rightBodyTop">
-            <TopBar avatar={ userImage } />
+          <TopBar avatar={userImage} />
         </div>
 
         <section className="assPassedRightSection">
@@ -29,7 +30,13 @@ function AssessmentPassed() {
             <h1>70%</h1>
             <img src={passImage} alt="e commerce completed order" />
           </div>
-          <a href="/assessment-fail">Home</a>
+          <div className="btnHome">
+            <Button
+              url="/"
+              bgColor="rgba(46, 49, 146, 1)"
+              buttonText="Home"
+            />
+          </div>
         </section>
       </div>
     </div>

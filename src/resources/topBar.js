@@ -16,7 +16,7 @@ function TopBar(props) {
         <div className="loggedUserDetail">
           <img src={ notification } alt="notification" />
           <div className="avatar" style={{backgroundImage: `url(${props.avatar})`}}></div>
-          <p>Opemidimeji<span>Level 1</span></p>
+          <p>Opemidimeji<span className="spanTopBar">Level 1</span></p>
         </div>
       </div>
     );

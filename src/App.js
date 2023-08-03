@@ -33,6 +33,13 @@ function App() {
           path="/course-detail-content"
           element={<CourseDetails_Content />}
         ></Route>
+        <Route path="/assessment" element={<AssessmentPage />}></Route>
+
+        for assessment fail
+        {/* <Route path="/trial-link" element={<AssessmentPassed />}></Route> */}
+
+        {/* for assessment passed */}
+        {/* <Route path="/trial-link" element={<AssessmentFail />}></Route> */}
       </Routes>
     </div>
   );

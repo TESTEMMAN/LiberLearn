@@ -2,7 +2,7 @@ import './button.css';
 
 function Button(props) {
     return (
-        <a className="getStarted" href={props.url} >{props.buttonText}</a>
+        <a className="getStarted" style={{backgroundColor: props.bgColor}} href={props.url} >{props.buttonText}</a>
     );
  }
 

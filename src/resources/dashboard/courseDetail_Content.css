@@ -6,6 +6,8 @@
     justify-content: space-between;
     box-sizing: border-box;
     margin: 20px 0 10px 0;
+        padding: 20px 30px;
+    border-radius: 10px;
 }
 
 .directToUnit div {
@@ -186,15 +188,34 @@ article {
     border-bottom: 1.5px solid grey;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    gap: 10px;
+    gap: 20px;
 }
 
 .bottomBorder p {
     text-align: left;
     align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.rightContainer div > h2 {
+.bottomBorder p span {
+    text-align: left;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+.bottomBorder p img {
+  margin-right: 5px;
+  width: 30px;
+  
+
+}
+
+
+.rightContainer div > h3 {
     margin: 0;
     font-size: 0.9em;
     text-align: left;

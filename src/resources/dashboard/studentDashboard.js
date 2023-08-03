@@ -3,10 +3,10 @@ import TopBar from "../topBar";
 import SideBar from "../sideBar";
 // import course1 from "../Image/image2/Image.png";
 import ToIcon from "../Image/image2/ToIcon.png";
-import tell from "../Image/image2/tell.png"
-import mic from "../Image/image2/mic.png"
-import Program from "../Image/image2/Program.png"
-import Wood from "../Image/image2/Wood.png"
+import tell from "../Image/image2/tell.png";
+import mic from "../Image/image2/mic.png";
+import Program from "../Image/image2/Program.png";
+import Wood from "../Image/image2/Wood.png";
 import Counselling from "../Image/image2/Counselling.png";
 import Communication from "../Image/image2/Communication.png";
 import first from "../Image/image2/first.png";
@@ -70,38 +70,38 @@ function StudentDashboard() {
                 courseImage={tell}
                 courseTitle="mathematics"
                 courseDetailedInfo="Learn the basics of numbers and arithmetic."
-                action="view details"
+                action="Continue"
               />
 
               <ComponentCourseA
                 courseImage={mic}
                 courseTitle="English"
                 courseDetailedInfo="Learn vocabulary and grammar."
-                action="view details"
+                action="Continue"
               />
               <ComponentCourseA
                 courseImage={Program}
                 courseTitle="Computer Programming"
                 courseDetailedInfo="Introduction to programming language."
-                action="view details"
+                action="Continue"
               />
               <ComponentCourseA
                 courseImage={Wood}
                 courseTitle="Technical skill training"
                 courseDetailedInfo="Carpentry and Woodwork, Plumbing."
-                action="view details"
+                action="Continue"
               />
               <ComponentCourseA
                 courseImage={Counselling}
                 courseTitle="Rehabilitation and counselling"
                 courseDetailedInfo="Get access to Rehabilitation and Counselling sections.."
-                action="view details"
+                action="Continue"
               />
               <ComponentCourseA
                 courseImage={Communication}
                 courseTitle="Skill development"
                 courseDetailedInfo="Learn communication and critical thinking skills."
-                action="view details"
+                action="Continue"
               />
             </div>
             <div className="rightBodyLow-Right">
@@ -160,7 +160,7 @@ function CourseDetails(props) {
       </div>
       <div className="detBottom">
         <div className="horizontalBar">
-          <div style={{ backgroundColor: `${props.color}`}}></div>
+          <div style={{ backgroundColor: `${props.color}` }}></div>
         </div>
         <p>{props.percent}</p>
       </div>
@@ -168,13 +168,9 @@ function CourseDetails(props) {
   );
 }
 
-
-
-
 // function ComponentCourse(props) {
 //   return <div className="componentCurse"></div>;
 // }
-
 
 function ComponentCourseA(props) {
   return (
@@ -195,7 +191,6 @@ function ComponentCourseA(props) {
     </div>
   );
 }
-
 
 function ComponentCourseB(props) {
   return (

@@ -9,7 +9,7 @@
 .assPageLeftBody {
   width: 20%;
   height: 100%;
-  background: linear-gradient(205.17deg, #2E3192 10.93%, #00AEEF 116.08%);
+  background: linear-gradient(205.17deg, #2e3192 10.93%, #00aeef 116.08%);
   padding: 20px;
   box-sizing: border-box;
 }
@@ -34,47 +34,88 @@
   justify-content: flex-start;
   overflow-y: scroll;
 }
+.assPageRightSection p {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-right: 100%;
+  text-align: left;
+  font-size:20px;
+  font-weight: 600;
+  
+}
 
 .assPageTop {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.assPageTop h2 {
+  margin-right: 100%;
+  color: rgba(16, 40, 68, 1);
 }
 
-.assPageLower {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 100%;
+.assPageLower{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
 }
-
+.assPageLower h1 {
+  color: rgba(46, 49, 146, 1);
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.assPageLower span {
+  text-align: center;
+   font-size: 20px;
+  font-weight: 700;
+  /* line-height: 22px; */
+  letter-spacing: 5px;
+ 
+}
 
 form {
-    width: 80%;
-    margin: 0;
-    box-sizing: border-box;
+  width: 80%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .inputType {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
-    margin: 10px 0;
-    border: 2px solid black;
-    border-radius: 6px;
-    padding: 0 10px;
-    box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  margin: 10px 0;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
-input[type=radio] {
-    margin: 0;
-    width: 30px;
-    height: 30px;
+input[type="radio"] {
+  margin: 0;
+  width: 30px;
+  height: 30px;
 }
+.Ash{
+  color: rgba(52, 49, 49, 1);
 
-
-
+  justify-content: right;
+  font-family:Poppins;
+ 
+}
+.Ash2{
+  align-content: flex-end;
+  flex-direction: column;
+  justify-content:right
+  /* background-color: blue; */
+  /* padding-right: 400px; */
+}
