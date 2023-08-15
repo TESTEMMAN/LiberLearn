@@ -133,13 +133,14 @@ function CourseDetail() {
       </div>
       <h3>Computer Programming</h3>
       <p>
-        By Oluwasijibomi Fayilenu, <span className="ElectSP">Computer Programming Expert</span>
+        By <span className="ElectSP">Oluwasijibomi Fayilenu, </span> Computer
+        Programming Expert
       </p>
       <div className="courseInfo">
         <span className="roundedTextBox">Information</span>
         <span>Content</span>
         <span>Community</span>
-        <span>Students</span>
+        <span style={{ backgroundImage: `url(${TCI1})`}}>Students</span>
       </div>
       <article className="StudentArticleCDP">
         <p>

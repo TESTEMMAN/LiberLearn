@@ -1,6 +1,5 @@
 .directToUnit {
     width: 90%;
-    /* background-color: rgb(230, 226, 226);  */
     background: rgba(248, 248, 251, 1);
 
     display: flex;
@@ -8,7 +7,7 @@
     justify-content: space-between;
     box-sizing: border-box;
     margin: 20px 0 10px 0;
-        padding: 20px 30px;
+    padding: 20px 30px;
     border-radius: 10px;
 }
 
@@ -113,6 +112,13 @@
 
 .leftContainer h2 {
     margin: 0;
+    color:  rgba(16, 40, 68, 1);
+
+}
+.leftContainer h2, span{
+  
+   font-weight: 600;
+
 }
 
 .leftContainer p {
@@ -140,6 +146,9 @@
     height: 491;
     background-color: black;
     border-radius: 8px;
+}
+.imageArea,h3 {
+ color:  rgba(16, 40, 68, 1);
 }
 
 .courseInfo {
@@ -239,9 +248,7 @@ article p {
 
 .bottomBorder p img {
   margin-right: 5px;
-  width: 30px;
-  
-
+  /* width: 15px; */
 }
 
 

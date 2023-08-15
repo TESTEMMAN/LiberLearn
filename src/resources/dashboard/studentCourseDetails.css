@@ -113,6 +113,15 @@ color: rgba(118, 114, 120, 1);
     align-items: center;
 }
 
+.courseInfo span {
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 13px;
+    padding-left: 18px;
+    display: flex;
+    align-items: center;
+}
+
 .roundedTextBox {
     width: fit-content;
     height: 40px;

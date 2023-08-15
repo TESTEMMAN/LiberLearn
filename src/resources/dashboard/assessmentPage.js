@@ -23,7 +23,6 @@ function AssessmentPage() {
               <h2>Discover</h2>
               <p>Courses &gt; Computer Programming &gt; Assessment</p>
             </div>
-            <Button url="/trial-link" buttonText="Submit" />
           </div>
           <div className="assPageLower">
             <h1>WELCOME!</h1>
@@ -54,8 +53,10 @@ function AssessmentPage() {
             </form>
 
             <form className="assessmentForm">
-              <p><span className="Ash">Question 2/100</span>
-                What is the correct way to create a hyperlink in HTML?</p>
+              <p>
+                <span className="Ash">Question 2/100</span>
+                What is the correct way to create a hyperlink in HTML?
+              </p>
               <label className="inputType">
                 <span>&lt;link&gt;</span>{" "}
                 <input type="radio" name="qst-one" value="body" />
@@ -69,6 +70,9 @@ function AssessmentPage() {
                 <input type="radio" name="qst-one" value="body" />
               </label>
             </form>
+            <div className="mitBtn">
+              <Button url="/trial-link" buttonText="Submit" />
+            </div>
           </div>
         </section>
       </div>

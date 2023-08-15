@@ -34,7 +34,7 @@ function CourseDetailContent() {
             <div className="rightBodyLow-Left">
               <div className="leftContainer">
                 <h2>Discover</h2>
-                <p>Courses &gt; Computer Programming</p>
+                <p>Courses &gt; <span>Computer Programming</span></p>
                 <CourseDetail />
               </div>
             </div>

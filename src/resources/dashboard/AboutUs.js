@@ -16,7 +16,7 @@ function AboutUsPage() {
 
       <div className="AboutUse">
         <h1>
-          <h1 className="AboutUsH1">About us</h1>
+          <h1 className="AboutUsH1">Who We Are</h1>
         </h1>
         <p>
           At LiberLearn, we are driven by a profound mission to rescue, empower,
@@ -42,13 +42,11 @@ function AboutUsPage() {
       </div>
       <div className="AboutUsMission">
         <div className="MissionA">
-          <h1 className="MissionTag">Our Mission </h1>
+          <h1 className="MissionTag">Our Vision </h1>
           <p>
-            By leveraging technology and innovative<br></br> approaches to offer
-            personalized and <br></br>transformative experiences that promote
-            <br></br>
-            growth, self-discovery, and a successful <br></br>reintegration into
-            the society
+            To be the most accessible and valuable <br></br>platform for
+            educational and rehabilitation <br></br> processes specially
+            designed for juvenile <br></br> offenders.
           </p>
         </div>
         <div
@@ -63,11 +61,13 @@ function AboutUsPage() {
           style={{ backgroundImage: `url(${VisionImage})` }}
         ></div>
         <div className="VisionB">
-          <h1 className="VisionTag">Our Vision</h1>
+          <h1 className="VisionTag">Our Mission</h1>
           <p>
-            To be the most accessible and valuable <br></br>platform for
-            educational and rehabilitation <br></br> processes specially
-            designed for juvenile <br></br> offenders.
+            By leveraging technology and innovative<br></br> approaches to offer
+            personalized and <br></br>transformative experiences that promote
+            <br></br>
+            growth, self-discovery, and a successful <br></br>reintegration into
+            the society
           </p>
         </div>
       </div>

@@ -26,7 +26,7 @@ function DivTwo () {
         </div>
         <div className="twoRight">
           <div className="twoRightContent">
-            <h1>About us</h1>
+            <h1>Who We Are</h1>
             <p>
               Welcome to our educational website, where we ensure juvenile
               correctional children have access to education.

@@ -13,7 +13,7 @@ function SideBar(props) {
       <div className="sideBarA">
         <img className="sideBarAImage" src={Layer2} alt="Layer2" />
         <p>
-          <a href="/">
+          <a href="/student-dashboard">
             <img className="HOUSE" src={house} alt="house" /> Home
           </a>
         </p>
@@ -24,7 +24,7 @@ function SideBar(props) {
           </a>
         </p>
         <p>
-{/* <<<<<<< HEAD
+          {/* <<<<<<< HEAD
           <img className="HEADSET" src={Headset} alt="Headset" />
           Help & Support
           </p>
@@ -32,7 +32,7 @@ function SideBar(props) {
           <img className="SUPPORT" src={Headset} alt="Help & Support" />
           Help & Support
         </p>
-{/* >>>>>>> 9ed4e172f68ecf7f0d2356be858631e713ffb11a */}
+        {/* >>>>>>> 9ed4e172f68ecf7f0d2356be858631e713ffb11a */}
         <p>
           <img className="SETTING" src={Settings} alt="Settings" />
           Settings
