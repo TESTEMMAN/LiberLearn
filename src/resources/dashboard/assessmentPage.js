@@ -11,24 +11,24 @@ import { Link } from "react-router-dom";
 
 function AssessmentPage() {
   const { slug } = useParams();
-	const [assessment, setAssessment] = useState(null);
+  const [assessment, setAssessment] = useState(null);
 
-	useEffect(() => {
+  useEffect(() => {
     async function fetchModule() {
       const moduleId = await getModuleIdFromSlug(slug);
 
       if (moduleId !== null) {
         fetch(`https://liberlearn-backend.up.railway.app/api/assessments`)
-        .then(response => response.json())
-        .then(assessments => {
-          if (assessments) {
-            const dAssessment = assessments.find(assessment => assessment.course === parseInt(moduleId));
-            setAssessment(dAssessment);
-          }
-        })
-        .catch(error => {
-          console.error('Error fetching assessment:', error);
-        });
+          .then(response => response.json())
+          .then(assessments => {
+            if (assessments) {
+              const dAssessment = assessments.find(assessment => assessment.course === parseInt(moduleId));
+              setAssessment(dAssessment);
+            }
+          })
+          .catch(error => {
+            console.error('Error fetching assessment:', error);
+          });
       }
     }
 
@@ -49,10 +49,10 @@ function AssessmentPage() {
           <TopBar avatar={userImage} />
         </div>
         <Assessment
-          moduleId = {assessment.course}
-          title = {assessment.title}
-          desc = {assessment.description}
-          questions = {assessment.questions}
+          moduleId={assessment.course}
+          title={assessment.title}
+          desc={assessment.description}
+          questions={assessment.questions}
         />
       </div>
     </div>
@@ -84,7 +84,7 @@ function Assessment(props) {
   const correctCount = calculateCorrectAnswers();
   const passPercentage = (correctCount / props.questions.length) * 100;
   const isModulePassed = () => {
-    return passPercentage >= 80;
+    return passPercentage >= 70;
   };
   // const handleSubmit = () => {
   //   if (isModulePassed()) {
@@ -99,9 +99,6 @@ function Assessment(props) {
           <h2>Discover</h2>
           <p className="text-faint">Courses &gt; Computer Programming &gt;<span> {props.title}</span> </p>
         </div>
-        <Link to={isModulePassed() ? `/module-passed?score=${score}` : `/module-failed?score=${score}`}>
-          <Button buttonText="Submit" />
-        </Link>
       </div>
       <div className="assPageLower">
         <h1>WELCOME!</h1>
@@ -112,7 +109,7 @@ function Assessment(props) {
           Choose the correct option
         </p>
         {
-          props.questions && props.questions.map((question, index) =>  (
+          props.questions && props.questions.map((question, index) => (
             <form className="assessmentForm" key={question.id}>
               <p>
                 <span className="Ash">Question {index + 1}/{props.questions.length}</span>
@@ -120,7 +117,7 @@ function Assessment(props) {
               </p>
               {
                 question.choices && question.choices.map(choice => (
-                  <label className="inputType"  key={choice.id}>
+                  <label className="inputType" key={choice.id}>
                     <span>{choice.text}</span>{" "}
                     <input
                       type="radio"
@@ -136,6 +133,9 @@ function Assessment(props) {
             </form>
           ))
         }
+        <Link className="no-link-style" to={isModulePassed() ? `/module-passed?score=${score}` : `/module-failed?score=${score}`}>
+          <Button buttonText="Submit" />
+        </Link>
       </div>
     </section>
   )

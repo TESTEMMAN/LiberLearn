@@ -5,7 +5,7 @@
 .assessmentPageBody {
   color: #102844;
   width: 100%;
-  min-height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -141,4 +141,8 @@ input[type="radio"] {
   flex-direction: column;
   color: rgba(16, 40, 68, 1);
   font-size: 1.2em;
+}
+.no-link-style {
+  align-self: end;
+  text-decoration: none;
 }

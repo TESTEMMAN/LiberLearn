@@ -1,7 +1,5 @@
-
-
 .landingCSS {
-    width: 100%;
+    width: 90%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,8 +13,7 @@
 
 .landingBody {
     position: relative;
-    top: 90px;
-    width: 80%;
+    top: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;

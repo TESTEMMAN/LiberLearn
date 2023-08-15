@@ -13,7 +13,7 @@ function SideBar(props) {
       <div className="sideBarA">
         <img className="sideBarAImage" src={Layer2} alt="Layer2" />
         <p>
-          <a href="/">
+          <a href="/student-dashboard">
             <img className="HOUSE" src={house} alt="house" /> Home
           </a>
         </p>
