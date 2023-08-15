@@ -72,40 +72,6 @@ export default StudentCourseDetails;
 
 function CourseDetail(props) {
   return (
-<<<<<<< HEAD
-    <div className="border">
-      <div className="imageArea">
-        <iframe
-          width="770"
-          height="491"
-          src="https://www.youtube.com/embed/zOjov-2OZ0E"
-          title="Introduction to Programming and Computer Science - Full Course"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <h3>Computer Programming</h3>
-      <p>
-        By <span className="ElectSP">Oluwasijibomi Fayilenu, </span> Computer
-        Programming Expert
-      </p>
-      <div className="courseInfo">
-        <span className="roundedTextBox">Information</span>
-        <span>Content</span>
-        <span>Community</span>
-        <span style={{ backgroundImage: `url(${TCI1})`}}>Students</span>
-      </div>
-      <article className="StudentArticleCDP">
-        <p>
-          Welcome to the exciting world of computer programming! Computer
-          programming is like giving instructions to a computer to perform
-          specific tasks. It's like teaching your electronic friend to do cool
-          and fun things! Just like learning a new language, programming
-          involves using special words and phrases, known as "code," to
-          communicate with the computer.{" "}
-        </p>
-=======
     <section className="rightSection">
       <div className="rightBodyLow">
         <div className="rightBodyLow-Left">
@@ -218,7 +184,6 @@ function CourseDetail(props) {
                 </span>
               </p>
             </div>
->>>>>>> 44382cd0421c7dc14bd19bbad471fb1cfd5e8ff2
 
             <div className="tags">
               <h2 className="ElectSP1">Tags:</h2>

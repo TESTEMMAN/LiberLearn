@@ -47,129 +47,6 @@ function CourseDetailContent() {
           <TopBar avatar={Avatar} />
         </div>
 
-<<<<<<< HEAD
-        <section className="rightSection">
-          <div className="rightBodyLow">
-            <div className="rightBodyLow-Left">
-              <div className="leftContainer">
-                <h2>Discover</h2>
-                <p>Courses &gt; <span>Computer Programming</span></p>
-                <CourseDetail />
-              </div>
-            </div>
-            <div className="rightBodyLow-Right">
-              <div className="rightContainer">
-                <h2>Basics Overview</h2>
-
-                <div className="bottomBorder">
-                  <h2>MODULE 1 - INTRODUCTION</h2>
-                  <p>
-                    <span>
-                      <img src={L1} alt="L1"></img>Definition of HTML
-                    </span>
-                    <img src={MarkUp} alt="MarkUp"></img>
-                  </p>
-
-                  <p>
-                    <span>
-                      <img src={L2} alt="L2"></img>HTML tags and elements
-                    </span>
-                    <img src={MarkUp} alt="MarkUp"></img>
-                  </p>
-                  <p>
-                    <span>
-                      <img src={L3} alt="L3"></img>Text formatting and ...
-                    </span>
-                    <img src={MarkUp} alt="MarkUp"></img>
-                  </p>
-                  <p>
-                    <span>
-                      <img src={L4} alt="L4"></img>Links and anchor
-                    </span>
-                    <img src={MarkUp} alt="MarkUp"></img>
-                  </p>
-                  <p>
-                    <span>
-                      <img src={L5} alt="L5"></img>Images and multimedia
-                    </span>
-                    <img src={MarkUp} alt="MarkUp"></img>
-                  </p>
-                  <p>
-                    <span>
-                      <img src={L6} alt="L6"></img>HTML forms
-                    </span>
-                    <img src={MarkUp} alt="MarkUp"></img>
-                  </p>
-                  <p>
-                    <span>
-                      <img src={L7} alt="L7"></img>Semantics HTML
-                    </span>
-                    <img src={MarkUp} alt="MarkUp"></img>
-                  </p>
-                  <p>
-                    <span>
-                      <img src={L8} alt="L8"></img>Tables
-                    </span>
-                    <img src={MarkUp} alt="MarkUp"></img>
-                  </p>
-                </div>
-
-                <div className="bottomBorder">
-                  <h2>COURSE 2 - Learn Manufacturing</h2>
-                  <p>
-                    <span>
-                      <img src={L1} alt="L1"></img>Introduction to CSS
-                    </span>
-                    <img src={MarkUp} alt="MarkUp"></img>
-                  </p>
-                  <p>
-                    <span>
-                      <img src={L2} alt="L2"></img>CSS selector
-                    </span>
-                    <img src={MarkUp} alt="MarkUp"></img>
-                  </p>
-                  <p>
-                    <span>
-                      <img src={L3} alt="L3"></img>CSS properties
-                    </span>
-                    <img src={MarkUp} alt="MarkUp"></img>
-                  </p>
-                  <p>
-                    <span>
-                      <img src={L4} alt="L4"></img>CSS box models
-                    </span>
-                    <img src={MarkUp} alt="MarkUp"></img>
-                  </p>
-                  <p>
-                    <span>
-                      <img src={L5} alt="L5"></img>Styling
-                    </span>
-                    <img src={MarkUp} alt="MarkUp"></img>
-                  </p>
-                  <p>
-                    <span>
-                      <img src={L6} alt="L6"></img>CSS color
-                    </span>
-                    <img src={MarkUp} alt="MarkUp"></img>
-                  </p>
-                  <p>
-                    <span>
-                      <img src={L7} alt="L7"></img>CSS color
-                    </span>
-                    <img src={MarkUp} alt="MarkUp"></img>
-                  </p>
-                  <p>
-                    <span>
-                      <img src={L88} alt="L88"></img>CSS transitions
-                    </span>
-                    <img src={MarkUp} alt="MarkUp"></img>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-=======
         <CourseDetail
           key               = {course.id}
           id                = {course.id}
@@ -182,7 +59,6 @@ function CourseDetailContent() {
                                 (a, b) => a.id - b.id
                               )}
         />
->>>>>>> 44382cd0421c7dc14bd19bbad471fb1cfd5e8ff2
       </div>
     </div>
   );
@@ -204,7 +80,7 @@ function CourseDetail(props) {
               <div className="imageArea">
                 <iframe
                   src={props.intro_video}
-                  title="I                                                                                                                                                                                                                                                                                            ntroduction to Programming and Computer Science - Full Course"
+                  title="I                                                                                                                                                                                                                                                                                            introduction to Programming and Computer Science - Full Course"
                   // frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
