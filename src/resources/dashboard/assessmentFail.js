@@ -4,9 +4,14 @@ import SideBar from "../sideBar";
 import TopBar from "../topBar";
 import userImage from "../Image/image2/userImage.png";
 import Button from "../Navigation/button";
+import { useLocation } from 'react-router-dom';
 
 
 function AssessmentFail() {
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  const score = searchParams.get('score');
+
   return (
     <div className="assessmentFailBody">
       <div className="assFailLeftBody">
@@ -27,8 +32,8 @@ function AssessmentFail() {
             this opportunity to improve and retake the test. You've got this!
             🌟📚💪
           </p>
-          <div className="passMark">
-            <h1>25%</h1>
+          <div className="failMark">
+            <h1>{score}%</h1>
             <img src={cancelIcon} alt="assessment failed" />
           </div>
           <div className="btnRetake">

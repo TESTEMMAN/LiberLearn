@@ -3,12 +3,12 @@ import TopBar from "../topBar";
 import SideBar from "../sideBar";
 // import course1 from "../Image/image2/Image.png";
 import ToIcon from "../Image/image2/ToIcon.png";
-import tell from "../Image/image2/tell.png";
-import mic from "../Image/image2/mic.png";
-import Program from "../Image/image2/Program.png";
-import Wood from "../Image/image2/Wood.png";
-import Counselling from "../Image/image2/Counselling.png";
-import Communication from "../Image/image2/Communication.png";
+// import tell from "../Image/image2/tell.png";
+// import mic from "../Image/image2/mic.png";
+// import Program from "../Image/image2/Program.png";
+// import Wood from "../Image/image2/Wood.png";
+// import Counselling from "../Image/image2/Counselling.png";
+// import Communication from "../Image/image2/Communication.png";
 import first from "../Image/image2/first.png";
 import Lube from "../Image/image2/Lube.png";
 import Bube from "../Image/image2/Bube.png";
@@ -18,9 +18,27 @@ import MeMail from "../Image/image2/MeMail.png";
 import YellowBulb from "../Image/image2/YellowBulb.png";
 import Cool from "../Image/image2/Cool.png";
 import LightBulb from "../Image/image2/LightBulb.png";
-import QuizQ from "../Image/image2/QuizQ.png";
+// import QuizQ from "../Image/image2/QuizQ.png";
+
+import { useEffect, useState } from "react";
 
 function StudentDashboard() {
+  const [courses, setCourses] = useState(null);
+
+  useEffect(() => {
+    fetch(`https://liberlearn-backend.up.railway.app/api/subjects`)
+      .then(response => response.json())
+      .then(data => {
+        setCourses(data);
+      })
+      .catch(error => {
+        console.error('Error fetching course details:', error);
+      });
+  });
+
+  if (!courses) {
+    return <div>Loading...</div>;
+  }
   return (
     <div className="studentDashboardBody">
       <div className="leftBodyOO">
@@ -62,49 +80,26 @@ function StudentDashboard() {
               percent="Start quiz" img=""
             />
           </div>
-
           <div className="rightBodyLow">
             <div className="rightBodyLow-Left">
               <p>Continue Courses</p>
-
-              <ComponentCourseA
-                courseImage={tell}
-                courseTitle="mathematics"
-                courseDetailedInfo="Learn the basics of numbers and arithmetic."
-                action="Continue"
-              />
-
-              <ComponentCourseA
-                courseImage={mic}
-                courseTitle="English"
-                courseDetailedInfo="Learn vocabulary and grammar."
-                action="Continue"
-              />
-              <ComponentCourseA
-                courseImage={Program}
-                courseTitle="Computer Programming"
-                courseDetailedInfo="Introduction to programming language."
-                action="Continue"
-                url="/courses/details"
-              />
-              <ComponentCourseA
-                courseImage={Wood}
-                courseTitle="Technical skill training"
-                courseDetailedInfo="Carpentry and Woodwork, Plumbing."
-                action="Continue"
-              />
-              <ComponentCourseA
-                courseImage={Counselling}
-                courseTitle="Rehabilitation and counselling"
-                courseDetailedInfo="Get access to Rehabilitation and Counselling sections.."
-                action="Continue"
-              />
-              <ComponentCourseA
-                courseImage={Communication}
-                courseTitle="Skill development"
-                courseDetailedInfo="Learn communication and critical thinking skills."
-                action="Continue"
-              />
+              <div className="student-course-list">
+                {courses.map(
+                  course => (
+                    <ComponentCourseA
+                      key={course.id}
+                      id={course.id}
+                      title={course.title}
+                      info={course.info}
+                      image={course.image_link}
+                      slug = {course.slug}
+                      action="Continue"
+                      url={`/courses/${course.slug}`}
+                      courses={course.courses}
+                    />
+                  )
+                )}
+              </div>
             </div>
             <div className="rightBodyLow-Right-SDB">
               <p>Upcoming tasks</p>
@@ -179,15 +174,28 @@ function ComponentCourseA(props) {
     <div className="componentCourseA">
       <div
         className="courseImage"
-        style={{ backgroundImage: `url(${props.courseImage})` }}
+        style={{ backgroundImage: `url(${props.image})` }}
       >
-        <p className="infoInsert">{props.courseTitle}</p>
+        <p className="infoInsert">{props.title}</p>
       </div>
-      <p>{props.courseDetailedInfo}</p>
+      <p>
+        {props.info && props.info.length > 80
+          ? `${props.info.substring(0, 120)} ...`
+          : props.info}
+      </p>
       <div className="unitDetails">
         <p>
-          <img src={ToIcon} />
-          15 Lessons <a href={props.url}>{props.action}</a>
+          <img src={ToIcon} alt="" />
+          {props.courses.length > 0 ? (
+            <>
+              {props.courses.reduce(
+                (totalLessons, course) => totalLessons + course.lessons.length, 0)
+              } Lessons
+            </>
+          ) : (
+            "No lessons yet"
+          )}
+          <a href={props.url}>{props.action}</a>
         </p>
       </div>
     </div>

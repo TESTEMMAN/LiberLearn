@@ -58,11 +58,20 @@
     margin: 30px 0;
 }
 
+.indCourse:hover {
+    transform: scale(1.10);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+    box-shadow: 0px 6px 12px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+}
+
 .courseDiv {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
+    /* gap: 30px; */
     height: fit-content;
 
 }
@@ -95,4 +104,14 @@
 }
 .courseName {
     text-align: left;
+}
+
+.course-card-link {
+    display: flex;
+    color: #343131;
+    text-decoration: none;
+}
+
+.course-card-link p {
+    font-size: 16px;
 }

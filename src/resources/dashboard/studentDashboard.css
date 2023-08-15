@@ -8,7 +8,7 @@
 }
 
 .leftBodyOO {
-  width: 20%;
+  width: 18%;
   height: 100%;
   background: linear-gradient(205.17deg, #2E3192 10.93%, #00AEEF 116.08%);
   padding: 20px;
@@ -16,7 +16,7 @@
 }
 
 .rightBody {
-  width: 80%;
+  width: 82%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -69,16 +69,16 @@
 }
 
 .courseDetail {
-  width: 275px;
+  display: flex;
   height: 150px;
-    background-color:rgba(255, 255, 255, 1);
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: left;
-    margin: 0;
-    box-sizing: border-box;
+  background-color:rgba(255, 255, 255, 1);
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 
@@ -97,21 +97,23 @@
 
 
 .detTop {
-  width: 90%;
+  /* width: 90%; */
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
 .detTopI {
-  width: 70%;
+  /* width: 70%; */
   display: flex;
   gap: 5px;
   align-items: center;
-  
+
 }
 
 .detTop p {
+  align-items: center;
+  display: flex;
   font-family: Poppins;
   font-size: 26px;
   font-weight: 600;
@@ -126,6 +128,7 @@
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0px;
+  margin-left: 8px;
   text-align: left;
 }
 
@@ -183,7 +186,7 @@
 }
 
 .rightBodyLow {
-  width: 95%;
+  width: 97%;
   height: 65%;
   display: flex;
   justify-content: space-between;
@@ -193,7 +196,7 @@
 }
 
 .rightBodyLow-Left {
-  width: 70%;
+  width: 74%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -207,7 +210,7 @@
 }
 
 .rightBodyLow-Right-SDB {
-  width: 25%;
+  width: 24%;
   height: 100%;
   box-sizing: border-box;
   display: flex;
@@ -216,8 +219,8 @@
 }
 
 .componentCourseA {
-    width: 240px;
-    height: 280px;
+    width: 30%;
+    /* height: 280px; */
     border-radius: 15px;
     box-sizing: border-box;
     display: flex;
@@ -229,6 +232,7 @@
     font-size: 13px;
     font-weight: 600;
     text-align: left;
+    margin-bottom: 20px;
 }
 
 .infoInsert {
@@ -294,4 +298,12 @@
   border-radius: 15px;
   margin-top:20px;
   box-sizing: border-box;
+}
+
+.student-course-list {
+  column-gap: 4.5%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+
 }

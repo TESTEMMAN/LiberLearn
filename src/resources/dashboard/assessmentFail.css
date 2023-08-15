@@ -1,5 +1,5 @@
 .assessmentFailBody {
-  width: 90%;
+  width: 100%;
   height: 90vh;
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@
   margin: 0;
 }
 
-.passMark h1 {
+.failMark h1 {
   font-family: Poppins;
   font-size: 82px;
   font-weight: 500;

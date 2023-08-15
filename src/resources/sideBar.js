@@ -24,6 +24,7 @@ function SideBar(props) {
           </a>
         </p>
         <p>
+<<<<<<< HEAD
           {/* <<<<<<< HEAD
           <img className="HEADSET" src={Headset} alt="Headset" />
           Help & Support
@@ -33,6 +34,11 @@ function SideBar(props) {
           Help & Support
         </p>
         {/* >>>>>>> 9ed4e172f68ecf7f0d2356be858631e713ffb11a */}
+=======
+          <img className="SUPPORT" src={Headset} alt="Help & Support" />
+          Help & Support
+        </p>
+>>>>>>> 44382cd0421c7dc14bd19bbad471fb1cfd5e8ff2
         <p>
           <img className="SETTING" src={Settings} alt="Settings" />
           Settings

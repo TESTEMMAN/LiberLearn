@@ -3,16 +3,17 @@
 }
 
 .assessmentPageBody {
+  color: #102844;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
 .assPageLeftBody {
-  width: 25%;
-  height: 100%;
+  width: 20%;
+  height: 100vh;
   background: linear-gradient(205.17deg, #2e3192 10.93%, #00aeef 116.08%);
   padding: 20px;
   box-sizing: border-box;
@@ -44,9 +45,7 @@
   width: 100%;
   margin-right: 100%;
   text-align: left;
-  font-size:20px;
-  font-weight: 600;
-  
+  font-size: 16px;
 }
 
 .assPageTop {
@@ -99,14 +98,6 @@ form {
   box-sizing: border-box;
 }
 
-.assessmentForm p {
-  display: flex;
-  flex-direction: column;
-  color: rgba(16, 40, 68, 1);
-  font-size: 1.2em;
-  margin: 0 0 20px 30px;
-}
-
 .inputType {
   width: 80%;
   display: flex;
@@ -131,8 +122,34 @@ input[type="radio"] {
   color: rgba(16, 40, 68, 0.7);
   font-size: 1.2em;
 }
+<<<<<<< HEAD
  
 .mitBtn{
   align-self: flex-end;
   
+=======
+
+.text-faint {
+  color: #767278;
+}
+.text-faint span {
+  color: #102844;
+  margin-left: 4px;
+}
+.assessmentForm {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 80%;
+}
+.assessmentForm p {
+  display: flex;
+  flex-direction: column;
+  color: rgba(16, 40, 68, 1);
+  font-size: 1.2em;
+}
+.no-link-style {
+  align-self: end;
+  text-decoration: none;
+>>>>>>> 44382cd0421c7dc14bd19bbad471fb1cfd5e8ff2
 }

@@ -2,8 +2,8 @@
 .mentors {
     display: flex;
     width: 25%;
-    height: 80%;
-    padding: 40px 32px 32px 32px;
+    /* height: 80%; */
+    padding: 0px 32px 32px 32px;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;

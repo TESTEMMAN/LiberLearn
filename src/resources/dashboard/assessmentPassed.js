@@ -4,8 +4,13 @@ import userImage from "../Image/image2/userImage.png";
 import SideBar from "../sideBar";
 import TopBar from "../topBar";
 import Button from "../Navigation/button";
+import { useLocation } from "react-router-dom";
 
 function AssessmentPassed() {
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  const score = searchParams.get('score');
+
   return (
     <div className="assessmentPassedBody">
       <div className="assPassedLeftBody">
@@ -27,7 +32,7 @@ function AssessmentPassed() {
             the opportunities ahead. Here's to a bright future! 🌟🌱
           </p>
           <div className="passMark">
-            <h1>70%</h1>
+            <h1>{score}%</h1>
             <img src={passImage} alt="e commerce completed order" />
           </div>
           <div className="btnHome">

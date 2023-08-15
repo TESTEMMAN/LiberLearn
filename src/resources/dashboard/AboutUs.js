@@ -61,6 +61,7 @@ function AboutUsPage() {
           style={{ backgroundImage: `url(${VisionImage})` }}
         ></div>
         <div className="VisionB">
+<<<<<<< HEAD
           <h1 className="VisionTag">Our Mission</h1>
           <p>
             By leveraging technology and innovative<br></br> approaches to offer
@@ -68,6 +69,12 @@ function AboutUsPage() {
             <br></br>
             growth, self-discovery, and a successful <br></br>reintegration into
             the society
+=======
+          <h1 className="VisionTag">Our Vision </h1>
+          <p>
+            To be the most accessible and valuable platform for educational and rehabilitation
+            processes specially designed for juvenile offenders.
+>>>>>>> 44382cd0421c7dc14bd19bbad471fb1cfd5e8ff2
           </p>
         </div>
       </div>
